@@ -1,0 +1,36 @@
+
+<div class="section db">
+  <div class="row">
+    <div class="sidebar col-md-3">
+      <div class="dashboard text-center" style="color: rgb(240, 240, 255 );font-size: 15px;">
+        <!-- <a ng-click="showProfile()" class="setting_back" ng-if="toggle"><i class="fa fa-angle-left"></i> <img ng-src="{{setting.userImage[0]}}" draggable="false"/>Profile</a> -->
+        <h4 [routerLink]="['/dashboard/about']" style="color: #fff;margin: 5px;">
+          <!--<i class="fa fa-angle-left" ng-if="toggle" ></i>-->
+          Profile</h4>
+      </div>
+
+      <div class="discover_cards" [routerLink]="['/web/social']">
+        <!-- <img src="/images/ripple.gif"> -->
+        <img src="assets/images/cards.png" alt="" class="img discoverCards" style="margin-left: -10px">
+        <h3 class="discover_match">Discover New Match</h3>
+      </div>
+      <div class="dashboard-menu">
+        <div class="dashboard-profile text-center">
+          <h4>Matched</h4>
+        </div>
+        {{notification.to}}
+        <div id="dashboard" class="profile" style="height: 520px;">
+          <ul class="people" *ngFor="let user of matchUser">
+            <li class="person" data-chat="person1" (click)="chat(user)">
+              <img [src]=user.userImage[0] alt="" />
+              <span class="name">{{user.username}}{{message}}</span>
+               <span class="time" *ngIf="notification.to == 'user._id'">2:09 PM</span>
+               <span class="preview">{{user._id}}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

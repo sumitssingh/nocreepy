@@ -1,0 +1,255 @@
+<div class="section wb">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2" style="width: 65%;font-size: 15px;">
+      <div class="home-title text-center">
+        <h4 class="content_title">Personal Details</h4>
+        <hr>
+      </div>
+      <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
+        <div class="row">
+          <div class="col-md-6">
+            <label class="control-label">Interested In
+            </label>
+            <angular2-multiselect [data]="interestedin" [(ngModel)]="user.interestedin"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="interestedinSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <label class="control-label">Intent
+            </label>
+            <angular2-multiselect [data]="intent" [(ngModel)]="user.intent"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="intentSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Height
+            </label>
+            <angular2-multiselect [data]="height" [(ngModel)]="user.height"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="heightSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Body Type
+            </label>
+            <angular2-multiselect [data]="bodyType" [(ngModel)]="user.bodyType"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="bodyTypeSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Do You Own a Car
+            </label>
+            <angular2-multiselect [data]="doYouOwnACar" [(ngModel)]="user.doYouOwnACar"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="doYouOwnACarSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Education
+            </label>
+            <angular2-multiselect [data]="education" [(ngModel)]="user.education"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="educationSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Education In
+            </label>
+            <angular2-multiselect [data]="educationIn" [(ngModel)]="user.educationIn"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="educationInSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Language
+            </label>
+            <angular2-multiselect [data]="language" [(ngModel)]="user.language"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="languageSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Do you want children
+            </label>
+            <angular2-multiselect [data]="doYouWantChildren" [(ngModel)]="user.doYouWantChildren"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="doYouHaveChildrenSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Marital Status
+            </label>
+            <angular2-multiselect [data]="maritalStatus" [(ngModel)]="user.maritalStatus"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="maritalStatusSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Longest Relationship
+            </label>
+            <angular2-multiselect [data]="longestRelationship" [(ngModel)]="user.longestRelationship"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="longestRelationshipSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Do you have children
+            </label>
+            <angular2-multiselect [data]="doYouHaveChildren" [(ngModel)]="user.doYouHaveChildren"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="doYouHaveChildrenSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Do you smoke
+            </label>
+            <angular2-multiselect [data]="doYouSmoke" [(ngModel)]="user.doYouSmoke"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="doYouSmokeSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Do you drink
+            </label>
+            <angular2-multiselect [data]="doYouDrink" [(ngModel)]="user.doYouDrink"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="doYouDrinkSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Do you do drugs
+            </label>
+            <angular2-multiselect [data]="doYouDoDrugs" [(ngModel)]="user.doYouDoDrugs"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="doYouDoDrugsSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Religion
+            </label>
+            <angular2-multiselect [data]="religion" [(ngModel)]="user.religion"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="religionSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Profession
+            </label>
+            <input type="text" name="name" class="form-control ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" name="profession" [(ngModel)]="model.profession" #profession="ngModel" required>
+
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Do you have pets
+            </label>
+            <angular2-multiselect [data]="doYouHavePets" [(ngModel)]="user.doYouHavePets"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="doYouHavePetsSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Personality
+            </label>
+            <angular2-multiselect [data]="personality" [(ngModel)]="user.personality"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="personalitySettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <label class="control-label">Ambition
+            </label>
+            <angular2-multiselect [data]="ambitious" [(ngModel)]="user.ambitious"
+                                  [ngModelOptions]="{standalone: true}"
+                                  [settings]="ambitiousSettings"
+                                  (onSelect)="onItemSelect($event)">
+            </angular2-multiselect>
+          </div>
+          <div class="col-md-12">
+            <br>
+            <label class="control-label">Headline (eg, I am the one)
+              <!-- <small>Enter your company name</small> -->
+              <!--<small ng-if="headlineCount">{{200 - user.headline.length}} left</small>-->
+            </label>
+            <textarea  ng-focus="headlineCount = true" ng-blur="headlineCount = false" placeholder="Maximum 50 characters" class="form-control" rows="2" ng-trim="false"  maxlength="200" name="headline" [(ngModel)]="model.headline" #headline="ngModel" required>
+                            </textarea>
+            <br>
+          </div>
+          <div class="col-md-12">
+            <br>
+            <label class="control-label">Description
+              <!-- <small>Enter your company name</small> -->
+              <!--<small ng-if="descriptionCount">{{200 - user.description.length}} left</small>-->
+            </label>
+            <textarea  ng-focus="descriptionCount = true" ng-blur="descriptionCount = false" placeholder="Minimun 100 characters" class="form-control" rows="4" ng-trim="false"  maxlength="200" name="description" [(ngModel)]="model.description" #description="ngModel" required>
+                            </textarea>
+            <br>
+          </div>
+          <div class="col-md-12">
+            <br>
+            <label class="control-label">Interests
+              <!-- <small>Enter your company name</small> -->
+              <!--<small ng-if="interestCount">{{200 - user.interests.length}} left</small>-->
+            </label>
+            <textarea  ng-focus="interestCount = true" ng-blur="interestCount = false" placeholder="Seperate interests with commas" class="form-control" rows="1" ng-trim="false"  maxlength="200" name="interests" [(ngModel)]="model.interests" #interests="ngModel" required>
+                            </textarea>
+            <br>
+          </div>
+          <div class="col-md-12">
+            <br>
+            <label class="control-label">Things i like to talk about
+              <!-- <small>Enter your company name</small> -->
+              <!--<small ng-if="talkableThingsCount">{{200 - user.thingsToTalk.length}} left</small>-->
+            </label>
+            <textarea  ng-focus="talkableThingsCount = true" ng-blur="talkableThingsCount = false" class="form-control" rows="2" ng-trim="false"  maxlength="200" name="thingsToTalk" [(ngModel)]="model.thingsToTalk" #thingsToTalk="ngModel" required>
+                            </textarea>
+            <br>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="form-title text-center">
+              <button ng-click="update()" ng-disabled="signUpForm.$invalid" class="btn btn-danger" style=" padding: 13px 75px;">Submit</button>
+              <!-- <button ui-sref="seekerSignup.preview" class="btn btn-primary" style=" padding: 13px 75px;">NEXT</button> -->
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+
+<!-- <starRating></starRating> -->
+<!--<div class="row" style="    min-height: 100%;">-->
+<div class="col-md-7 col-xs-12 col-md-offset-1">
+    <div class="menu">
+      <a class="back"><i class="fa fa-angle-left"></i> <img [src]=user.image /></a>
+      <div class="username">{{user.username}}</div>
+    </div>
+    <ol class="chat">
+      <li class="other" *ngFor="let message of messages">
+        <div class="row" ng-if="user">
+          <div class="col-xs-12" ng-class="{'col-xs-push-10' : (message.username == curtrentUser)}">
+            <div class="msg" ng-class-even="pull-right
+                                " ng-class-odd="pull-left ">
+              <div class="user">{{message.text}}</div>
+              <p style="position:absolute;bottom:0;right:25px;">11/12/12</p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <div class="typezone">
+      <form>
+        <textarea class="chatArea" type="text" rows="2" [(ngModel)]="message" name="message" placeholder="Say something"></textarea>
+        <input type="submit" (click)="sendMsg(message, user.id)" class="send" value=""/>
+      </form>
+      <div class="emojis"></div>
+    </div>
+  </div>
+
+
+

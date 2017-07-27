@@ -1,0 +1,67 @@
+<!-- <div class="post-padding" style="background: #f0f0f0;"> -->
+
+<div class="section db">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="dashboard text-center">
+        <h4 (click)="settingData()" [routerLink]="['/web/social']" class="setting_back"><i class="fa fa-angle-left"></i>
+          <img [src]="userImage[0]" draggable="false"/>MY DASHBOARD
+          </h4>
+      </div>
+      <div class="dashboard-menu">
+        <div class="dashboard-profile">
+          <h4>Profile</h4>
+        </div>
+        <div id="dashboard" class="profile">
+          <ul class="profile-menu">
+            <li class=""><a ui-sref-active="active" [routerLink]="['/dashboard/about']"><i class="fa fa-user"></i>About Me</a></li>
+            <li><a ui-sref-active="active" [routerLink]="['/dashboard/personal']"><i class="fa fa-files-o"></i>Personal Detail</a></li>
+            <li><a ui-sref-active="active" [routerLink]="['/dashboard/gallery']"><i class="fa fa-calendar-check-o"></i>Gallery</a></li>
+          </ul>
+        </div>
+        <div class="mySetting" >
+          <div class="setting_title">
+            <h3 style="margin: 0px;padding: 10px;">Discovery Setting</h3>
+          </div>
+          <ul class="setting">
+            <li class="control-label">Maximum Distance
+              <!--<rzslider rz-slider-model="slider.value" rz-slider-options="slider.options"></rzslider>-->
+            </li>
+            <form name="signUpForm" class="submit-form">
+              <li class="control-label">
+                <select class="form-control with-search " select-picker data-live-search="true" title="Religion" name="religion" [(ngModel)]="userSetting.religion" required>
+                  <option>Non-religious</option>
+                  <option>Spiritual</option>
+                  <option>Muslim</option>
+                  <option>Jewish</option>
+                  <option>Catholic</option>
+                  <option>Buddhist</option>
+                  <option>Hindu</option>
+                  <option>Anglican</option>
+                  <option>Sikh</option>
+                  <option>Methodist</option>
+                  <option>Christian - other</option>
+                  <option>Baptist</option>
+                  <option>Lutheran</option>
+                  <option>Presbyterian</option>
+                  <option>Other</option>
+                </select>
+              </li>
+              <li class="control-label">
+                <select class="form-control with-search"  select-picker data-live-search="" title="Gender" name="gender" [(ngModel)]="userSetting.gender" required>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </li>
+            </form>
+            <li class="control-label">
+              <span>Age Range</span>
+              <!--<rzslider rz-slider-model="slide.minValue" rz-slider-high="slide.maxValue" rz-slider-options="slide.options"></rzslider>-->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

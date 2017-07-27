@@ -1,0 +1,156 @@
+
+select.form-control.with-search.bs-select-hidden.ng-pristine.ng-untouched.ng-empty.ng-invalid.ng-invalid-required,
+select.form-control.with-search.ng-pristine.ng-untouched.ng-empty.ng-invalid.ng-invalid-required,
+input.form-control.ng-pristine.ng-untouched.ng-empty.ng-invalid.ng-invalid-required,
+input.form-control.ng-pristine.ng-empty.ng-invalid.ng-invalid-required.ng-touched,
+input.form-control.ng-pristine.ng-untouched.ng-empty.ng-valid.ng-invalid.ng-invalid-required {
+  border-color: red !important;
+  /*background-color: #fff;*/
+}
+
+
+a.nav_active {
+  border-bottom: 3px solid #c9302c;
+  color: #c9302c !important;
+}
+.nav_auth a{
+  color: #013d3e !important;
+}
+.bottomText p{
+  padding: 10px;
+  color: rgba(51, 51, 51, 0.68) !important
+}
+.bottomText span{
+
+  padding: 10px 10px 13px 0px;
+  color: rgba(164, 164, 164, 0.52)
+}
+.bottomText hr.left{
+  margin-top: -43px !important;
+  width: 106px;
+  text-align: center;
+  border-top: 2px solid #eee;
+  /* padding-right: 14px; */
+  margin-right: 145px;
+}
+
+ul.check li{
+  padding-bottom: 14px !important;
+}
+/*.footer_contact{
+  padding-top: 100px;
+}
+.footer_contact .mobileicons{
+      text-align: -webkit-left;
+}
+*/
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{
+  background-color: #a8a8a8 !important;
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .caret{
+  border: none;
+  top: 20% !important;
+}
+.chevron.bootstrap-select.btn-group.btn-group .dropdown-toggle .caret{
+  border: initial !important;
+  top: initial !important;
+}
+.chevron.bootstrap-select.btn-group.btn-group .dropdown-toggle .caret:before{
+  /* border: inherit;
+   top: inherit;*/
+}
+.search-form.bootstrap-select.btn-group .dropdown-toggle .caret:before {
+  /*display: none;*/
+  /*border:none;*/
+  font-family: FontAwesome;
+  content: "\f002";
+  color: white;
+  /*font-size: 15px;*/
+  font-size: 17px;
+}
+
+/******************************************************************************************************************/
+/*job desc page*/
+/*********************************************************************************************************************/
+]
+.bootstrap-select.btn-group .dropdown-toggle .caret{
+  border: none;
+  top: 20% !important;
+}
+.chevron.bootstrap-select.btn-group.btn-group .dropdown-toggle .caret{
+  border: initial !important;
+  top: initial !important;
+}
+.chevron.bootstrap-select.btn-group.btn-group .dropdown-toggle .caret:before{
+  /* border: inherit;
+   top: inherit;*/
+}
+ul.dropdown-menu.inner{
+  overflow-y: auto;
+  max-height: 150px !important;
+}
+.jobListTitle{
+  text-align: center;
+}
+.jobListTitle h4{
+  color: #013d3e;
+}
+.titleBorder{
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 3px solid #013d3e;
+  width: 11%
+}
+/*  .submit-form .form-control{
+      border: 2px solid #c4c4c4;
+      border-radius: 25px;
+  }*/
+.bootstrap-select.btn-group .dropdown-menu{
+  border-radius: 8px;
+}
+/*    .searchBoxSingle{
+        height: 150px;
+        border-right: 3px solid #191919;
+        width: 20% !important;
+    }*/
+.jobFeatures{
+  font-size: 23px;
+  color: #8d8d8d !important;
+}
+/* .section.lb{
+     min-height: 1000px;
+ }*/
+.sideCard{
+  height: 50%;
+  border-radius: 10px;
+  box-shadow: -3px 8px 24px 11px #e1e0de;
+  width: 120%;
+  float:right;
+}
+.content{
+  font-size: large;
+  color:#595957;
+  text-align: justify;
+}
+/* .title{
+ font-family: "poppinssemibold", sans-serif;
+ font-weight: normal !important;
+ color: #FF7044;
+ font-size: larger;
+ }*/
+.sidecardImage{
+  width:120%;
+  border: 7px solid #ececec;
+  border-radius: 10px
+}
+
+.form-control {
+  height: 48px;
+  box-shadow: 0px 1px 5px #959595 !important;
+}
+
+
+
+/*!********************************************************************************************************************/

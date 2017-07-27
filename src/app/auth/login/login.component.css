@@ -1,0 +1,426 @@
+
+#facebook ._-kb div {
+  font-family: inherit;
+}
+._li._li._li {
+  overflow: initial;
+}
+div {
+  display: block;
+}
+#facebook ._-kb div {
+  font-family: inherit;
+}
+
+#facebook ._-kb.sf {
+  font-family: San Francisco, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+#facebook ._-kb.mac {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+._53jh {
+  background-color: #ffffff;
+  /*background-image: linear-gradient(#4e69a2, #3b5998 50%);*/
+  border-bottom: 1px solid #f40019;
+  min-height: 42px;
+}
+.loggedout_menubar_container {
+  height: 82px;
+  min-width: 980px;
+}
+.loggedout_menubar {
+  margin: 0 auto;
+  /*padding-top: 13px;*/
+  width: 980px;
+}
+._ohe {
+  float: left;
+}
+.lfloat {
+  float: left;
+}
+h1 {
+  font-size: 14px;
+}
+uKwBhVUqY6j.css:2
+h1, h2, h3, h4, h5, h6 {
+  color: #1d2129;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #365899;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sp_sK1S6to5F8K.sx_d0342b {
+  width: 170px;
+  height: 34px;
+  background-position: 0 0;
+}
+.loggedout_menubar .fb_logo {
+  margin-top: 17px;
+}
+i.img {
+  -ms-high-contrast-adjust: none;
+}
+.sp_sK1S6to5F8K {
+  background-image: url(/rsrc.php/v3/yd/r/f_9mS3j55gT.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+._ohf {
+  float: right;
+}
+.rfloat {
+  float: right;
+}
+form {
+  margin: 0;
+  padding: 0;
+}
+.menu_login_container .html7magic {
+  padding-bottom: 0px;
+}
+
+.menu_login_container table tr td {
+  padding: 0 0 0 14px;
+}
+td, td.label {
+  text-align: left;
+}
+body, button, input, label, select, td, textarea {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+.menu_login_container .html7magic label {
+  color: #000;
+  font-weight: normal;
+  padding-left: 1px;
+}
+
+body, button, input, label, select, td, textarea {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+label {
+  cursor: pointer;
+  color: #666;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.menu_login_container .html7magic {
+  padding-bottom: 0px;
+}
+.menu_login_container table tr td {
+  padding: 0 0 0 14px;
+}
+td, td.label {
+  text-align: left;
+}
+.menu_login_container .inputtext, .menu_login_container .inputpassword {
+  border-color: #c9302c;
+  margin: 0;
+  width: 142px;
+}
+.menu_login_container #email {
+  direction: ltr;
+}
+.inputtext, .inputpassword {
+  padding-bottom: 0px;
+}
+textarea, .inputtext, .inputpassword {
+  border: 1px solid #bdc7d8;
+  margin: 0;
+  padding: 3px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+#facebook .sf .uiButton {
+  font-family: -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+}
+#facebook ._-kb button, #facebook ._-kb input, #facebook ._-kb label, #facebook ._-kb select, #facebook ._-kb td, #facebook ._-kb textarea {
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+.uiButtonConfirm {
+  background-color: #4267b2;
+  border-color: #29487d;
+}
+.uiButton, .uiButtonSuppressed:active, .uiButtonSuppressed:focus, .uiButtonSuppressed:hover {
+  background-color: #c9302c;
+  border: 1px solid #c9302c;
+}
+.lfloat img{
+  width: 500px;
+  margin: -238px;
+  margin-top: -210px !important;
+}
+.uiButton {
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  line-height: 14px;
+  padding: 2px 6px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  vertical-align: top;
+  white-space: nowrap;
+  color: #fff;
+}
+form.async_saving .uiButton.uiButtonSpecial .uiButtonText, form.async_saving .uiButton.uiButtonSpecial input, form.async_saving .uiButton.uiButtonConfirm .uiButtonText, form.async_saving .uiButton.uiButtonConfirm input, .uiButtonSpecial .uiButtonText, .uiButtonSpecial input, .uiButtonSpecial.uiButtonDisabled .uiButtonText, .uiButtonSpecial.uiButtonDisabled input, .uiButtonConfirm .uiButtonText, .uiButtonConfirm input, .uiButtonConfirm.uiButtonDisabled .uiButtonText, .uiButtonConfirm.uiButtonDisabled input {
+  color: #fff;
+}
+
+.menu_login_container table tr {
+  vertical-align: top;
+}
+.uiButtonText, .uiButton input {
+  background: none;
+  border: 0;
+  color: #4b4f56;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.menu_login_container .login_form_label_field {
+  padding-top: 4px;
+}
+.menu_login_container table tr td {
+  padding: 0 0 0 14px;
+}
+td, td.label {
+  text-align: left;
+}
+#facebook ._-kb a {
+  font-family: inherit;
+}
+
+.menu_login_container .login_form_label_field label, .menu_login_container .login_form_label_field a {
+  color: #000000;
+  font-weight: normal;
+}
+a {
+  color: #F44336;
+  cursor: pointer;
+  text-decoration: none;
+}
+.section {
+  /*padding-bottom: 20px;*/
+  padding-top: 20px;
+}
+h4.content_title {
+  font-size: 20px;
+}
+a:focus, a:hover {
+  color: #F44336;
+  text-decoration: underline;
+}
+/******************************************************************************/
+/*navbar*/
+/******************************************************************************/
+
+.navbar-default .navbar-nav > li .btn {
+  color: #fff !important;
+  border-radius: 25px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  /*color: #203143;*/
+  color: #848484;
+  /*font-size: 14px;*/
+  font-size: 19px;
+  text-transform: none;
+}
+
+.navbar-nav > li > a {
+  padding: 14px 25px;
+  cursor: pointer;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: transparent;
+}
+li.dropdown.membermenu a.dropdown-toggle:focus,
+li.dropdown.membermenu a.dropdown-toggle:hover,
+li.dropdown.membermenu a.dropdown-toggle {
+  background-color: #f3f6f9 !important;
+  border-radius: 100px;
+  color: #013d3e !important;
+  border: 1px solid #eaedf0;
+  margin-top: 8px;
+  margin-right: 20px;
+  padding: 0 12px 0 0 !important;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent !important;
+}
+
+
+/******************************************
+    MEGA MENU
+******************************************/
+
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+
+.yamm .container {
+  position: relative;
+}
+
+.yamm .dropdown-menu {
+  left: auto;
+}
+
+.yamm .yamm-content {
+  padding: 0;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+
+.yamm .dropdown.yamm-half .dropdown-menu {
+  left: auto;
+  max-width: 620px;
+}
+
+.header .nav-tabs > li {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.yamm .fa-angle-right {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.yamm-half .dropdown-menu {
+  margin-top: 40px !important;
+  background-color: #ffffff;
+  border: 0;
+  padding: 10px;
+  box-shadow: none;
+  border-radius: 0 3px 3px 0;
+  padding: 30px;
+  position: relative;
+}
+
+.yamm-half .dropdown-menu ul {
+  padding: 0;
+  list-style: none;
+}
+
+.yamm-half .tab-pane li a {
+  color: #fff;
+}
+
+.yamm-half .tab-pane li {
+  /*font-size: 13px;*/
+  font-size: 15px;
+}
+
+.yamm-half .tab-pane li:hover a {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  /* For IE8 and earlier */
+  color: #ffffff !important;
+}
+
+.yamm-half .tab-pane p {
+  /*font-size: 12px;*/
+  font-size: 14px;
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.yamm-half .tab-pane hr {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.yamm-half .tab-pane.firstcol {
+  padding: 30px;
+  margin: 0 -15px;
+  background-color: #2c3e50;
+}
+
+.yamm-half .tab-pane.secondcol {
+  padding: 30px;
+  margin: 0 -15px;
+  background-color: #c0392b;
+}
+
+.yamm-half .tab-pane.thirdcol {
+  padding: 30px;
+  margin: 0 -15px;
+  background-color: #27ae60;
+}
+
+.yamm-half .tab-pane.firstcol hr {
+  border-color: #1c2e40;
+}
+
+.yamm-half .tab-pane.secondcol hr {
+  border-color: #b12a1c;
+}
+
+.yamm-half .tab-pane.thirdcol hr {
+  border-color: #19a052;
+}
+
+.yamm-half .tab-pane.fivecol {
+  padding: 30px;
+  margin: 0 -15px;
+  background-color: #f3f6f9;
+}
+li,
+p {
+  color: grey;
+  /*font-size: 15px;*/
+  font-family: poppinslight;
+  font-weight: normal !important;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 26px;
+}
+/**************************************************************************/
+/**************************************************************************/

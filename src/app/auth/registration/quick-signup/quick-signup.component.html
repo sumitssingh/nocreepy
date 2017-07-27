@@ -1,0 +1,138 @@
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="home-title text-center">
+          <h4 class="content_title">Features</h4>
+          <hr style="margin-left: -60px;">
+        </div>
+        <div class="opportunity_desc_steps">
+          <i class="pull-left fa pull-left fa-check" style="color: #e44e2f;"></i> <p class="opt_desc" style="margin-left: 21px" style="margin-left: 21px">
+          No Creepy People.
+        </p>
+          <i class="pull-left fa pull-left fa-check" style="color: #e44e2f;"></i> <p class="opt_desc" style="margin-left: 21px">
+          No Fake Profiles.
+        </p>
+          <i class="pull-left fa pull-left fa-check" style="color: #e44e2f;"></i> <p class="opt_desc" style="margin-left: 21px">
+          It's Free to join.
+        </p>
+          <i class="pull-left fa pull-left fa-check" style="color: #e44e2f;"></i> <p class="opt_desc" style="margin-left: 21px">
+          Only members can see your profile.
+        </p>
+          <i class="pull-left fa pull-left fa-check" style="color: #e44e2f;"></i> <p class="opt_desc" style="margin-left: 21px">
+          Find people for friendship, dating, relationship and marriage.
+        </p>
+          <i class="pull-left fa pull-left fa-check" style="color: #e44e2f;"></i> <p class="opt_desc" style="margin-left: 21px">
+          Verified profiles only.
+        </p>
+          <i class="pull-left fa pull-left fa-check" style="color: #e44e2f;"></i> <p class="opt_desc" style="margin-left: 21px">
+          User rating and feedback system to avoid creepy people.
+        </p>
+        </div>
+      </div><!-- end col -->
+      <!-- <div class="col-md-1 col-sm-1 col-xs-12 divider"></div> -->
+      <div class="col-md-6 col-sm-6 col-xs-12" style="border-left-style: inset;">
+        <div class="home-title rightside text-center">
+          <h4 class="content_title">Create a new account</h4>
+          <hr style="margin-left: -100px;">
+        </div>
+        <!--<form name="form" id="submit" class="submit-form" style="padding-top: 0px;padding-bottom: 0px !important;">-->
+        <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
+          <div class="row">
+            <div class="col-md-12">
+              <label class="control-label">Username*
+              </label>
+              <!--<input type="text"  class="form-control" ng-model="user.username" required>-->
+              <input type="text" class="form-control" name="username" [(ngModel)]="model.username" #username="ngModel" required />
+            </div>
+
+            <div class="col-md-12">
+              <!--<br>-->
+              <label class="control-label">Password*
+              </label>
+              <input type="text" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required /><i class="fa fa-eye" aria-hidden="true" ng-click="toggleButton()" style="float: right;margin-top: -26px;margin-right: 12px;"></i>
+            </div>
+            <div class="col-md-12">
+              <!--<br>-->
+              <label class="control-label">E-mail*
+                <small ng-if="signUpForm.email.$error.email">Invalid email address.</small>
+              </label>
+              <input type="email" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required />
+            </div>
+            <div class="col-md-12">
+              <label class="control-label">D.O.B
+              </label>
+              <md-input-container class="example-full-width">
+                <input class="form-control" mdInput [min]="minDate" [max]="maxDate" name="dob" [(ngModel)]="model.dob" [mdDatepicker]="picker" placeholder="Choose a date">
+                <button mdSuffix [mdDatepickerToggle]="picker"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+              </md-input-container>
+              <md-datepicker #picker></md-datepicker>
+            <!--<md-input-container>-->
+              <!--<input mdInput class="form-control" [mdDatepicker]="myDatepicker" readonly>-->
+              <!--<button mdSuffix [mdDatepickerToggle]="myDatepicker"></button>-->
+            <!--</md-input-container>-->
+            <!--<md-datepicker #myDatepicker></md-datepicker>-->
+            </div>
+            <div class="col-md-12">
+              <!--<br>-->
+              <label class="control-label">Gender*
+                <!-- <small>Enter a short title (Ex: Web Designer)</small> -->
+              </label>
+              <angular2-multiselect [data]="gender" [(ngModel)]="user.gender"
+                                    [ngModelOptions]="{standalone: true}"
+                                    [settings]="dropdownSettings"
+                                    (onSelect)="onItemSelect($event)"
+                                    (onDeSelect)="OnItemDeSelect($event)"
+                                    (onSelectAll)="onSelectAll($event)"
+                                    (onDeSelectAll)="onDeSelectAll($event)"></angular2-multiselect>
+            </div>
+            <!-- </div> -->
+            <div class="col-md-6 col-sm-6 col-xs-12 col-xs-offset-4">
+              <!--<br>-->
+              <div class="form-title text-center">
+                <button type="submit" class="btn btn-primary" [disabled]="toggle" style="float: left;">Register</button>
+              </div>
+              <!--<button [disabled]="loading" class="btn btn-primary">Register</button>-->
+              <!--<img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />-->
+              <!--<div class="form-title text-center">-->
+              <!--<button ng-click="register()" ng-disabled="form.$invalid" class="btn btn-danger" >Sign Up</button>-->
+              <!--</div>-->
+            </div>
+          </div>
+        </form>
+      </div><!-- end col -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+</div><!-- end section -->
+<div class="footer" id="footer">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="col-md-3 col-sm-4 col-xs-4 footer-tab_header">
+            <div class="footer-title">
+              <h4 class="text-center">
+                Safety
+              </h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-4 footer-tab_header middle">
+            <div class="footer-title">
+              <h4 class="text-center">
+                Terms of Service
+              </h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-4 footer-tab_header">
+            <div class="footer-title">
+              <h4 class="text-center">
+                Privacy Policy
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+
+<div class="col-md-7 col-xs-12 col-md-offset-1">
+  <form name="form" (ngSubmit)="f.form.valid && register()" id="submit" class="submit-form" #f="ngForm" novalidate>
+  <div class="form_title text-center">
+      <h4>ABOUT ME</h4>
+      <hr>
+    </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <label class="control-label">Username*
+          </label>
+          <!--<input type="text"  class="form-control" ng-model="user.username" required>-->
+          <input type="text" class="form-control" name="username" [(ngModel)]="model.username" #username="ngModel" required />
+        </div>
+        <br>
+        <div class="col-md-12">
+          <br>
+          <label class="control-label">E-mail*
+            <small *ngIf="!f.form.valid">Invalid email address.</small>
+          </label>
+          <input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required />
+        </div>
+        <!--<div class="col-md-12">-->
+          <!--<br>-->
+          <!--<label class="control-label">D.O.B</label>-->
+          <!--<md-input-container>-->
+          <!--<input mdInput [mdDatepicker]="myDatepicker">-->
+          <!--<button mdSuffix [mdDatepickerToggle]="myDatepicker"></button>-->
+          <!--</md-input-container>-->
+          <!--<md-datepicker #myDatepicker></md-datepicker>-->
+        <!--</div>-->
+        <br>
+        <div class="col-md-12">
+          <br>
+          <label class="control-label">Gender*
+            <!-- <small>Enter a short title (Ex: Web Designer)</small> -->
+          </label>
+          <angular2-multiselect [data]="gender" [(ngModel)]="model.gender"
+                                [ngModelOptions]="{standalone: true}"
+                                [settings]="dropdownSettings"
+                                (onSelect)="onItemSelect($event)"
+                                (onDeSelect)="OnItemDeSelect($event)"
+                                (onSelectAll)="onSelectAll($event)"
+                                (onDeSelectAll)="onDeSelectAll($event)"></angular2-multiselect>
+        </div>
+      <div class="btn_responsive">
+        <!--<div class="col-md-6">-->
+          <!--<br>-->
+          <!--<div class="form-title-edit text-center">-->
+            <!--<button ng-click="toggleButton();setChildSelectIsDisabled()" ng-hide="!toggle" class="btn btn-primary">EDIT</button>-->
+          <!--</div>-->
+              <!--<button ng-click="seekerDashboardController.showForm = !seekerDashboardController.showForm" ng-hide="!toggle" class="btn btn-primary">{{seekerDashboardController.showForm ? "Cancel" : "Create a Review"}}</button>-->
+          <!--</div> -->
+          <!--<div class="form-title-edit text-center">-->
+            <!--<button type="submit" class="btn btn-primary" ng-click="update();submit()" ng-show="!signUp" ng-hide="toggle" style="float: left;">SAVE</button>-->
+            <!--<button type="submit" class="btn btn-primary" style="padding: 13px 30px;" ng-show="signUp">Please Wait <i class="fa fa-spinner fa-spin"></i></button>-->
+          <!--</div>-->
+        </div>
+        <!--<div class="col-md-6">-->
+          <!--<div class="form-title text-center">-->
+            <!--<button type="submit" class="btn btn-primary" (click)="toggle=true ? toggle=false: toggle=true" style="float: left;">EDIT</button>-->
+          <!--</div>-->
+        <!--</div>-->
+        <div class="col-md-6">
+          <div class="form-title text-center" style="margin-left: 129px;">
+            <button type="submit" class="btn btn-primary" [disabled]="toggle" style="float: left;">SAVE</button>
+          </div>
+        </div>
+      </div>
+  </form>
+</div>
+
